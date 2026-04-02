@@ -2,7 +2,30 @@
     font-family: Nunito-Sans, Arial;
 }
 
-h1,h2,h3{
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,
+nav > a{
     font-weight: 100;
     text-transform: uppercase;
+}
+
+header{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header > a{
+    justify-self: flex-start;
+    margin-right: 30vw;
+}
+
+header{
+    display: flex;
+    gap: 25px;
 }
