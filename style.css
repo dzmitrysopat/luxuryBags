@@ -134,7 +134,6 @@ h2{
 /* footer */
 footer{
     position: relative;
-    background-color: #383838;
     display: flex;
     padding: 50px 25px;
 }
@@ -161,10 +160,7 @@ footer{
     position: absolute;
     justify-self: end;
     align-self: flex-end;
-    color: #fff;
+    /* color: #fff; */
 }
 
-.footer-copy > span{
-    color: #fff;
-}
 
