@@ -59,7 +59,9 @@ header a:hover{
 
 .nav-header > a:hover{
     border: none;
-    background-color: #ffc2c2;
+    color: #fff;
+    background-color: #383838;
+    /* background-color: #ffc2c2; */
 }
 
 #banner{
@@ -107,3 +109,62 @@ h2{
     padding: 10px 35px;
     background-color: #ffc2c2;
 }
+
+#shopContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.shop-item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.shop-item > img{
+    width: 15vw;
+    height: 45vh;
+}
+
+.shop-item > .name{
+    font-weight: 600;
+}
+
+/* footer */
+footer{
+    position: relative;
+    background-color: #383838;
+    display: flex;
+    padding: 50px 25px;
+}
+
+.nav-footer{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-footer > a{
+    background-color: #fff;
+    color: #383838;
+    padding: 5px 25px 5px 5px;
+    transition: all .4s;
+}
+
+.nav-footer >a:hover{
+    background-color: #ffc2c2;
+}
+
+.footer-copy{
+    right: 5%;
+    position: absolute;
+    justify-self: end;
+    align-self: flex-end;
+    color: #fff;
+}
+
+.footer-copy > span{
+    color: #fff;
+}
+
