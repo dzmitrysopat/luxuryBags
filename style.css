@@ -23,7 +23,10 @@ h1,h2,a{
     text-transform: uppercase;
 }
 
+/* header */
+
 header{
+    z-index: 2;
     background: #fff;
     padding: 20px 35px;
     top: 0;
@@ -43,7 +46,7 @@ header > a{
 header a:hover{
     border: 1px solid #ffc2c2;
     background-color: #ffc2c2;
-} 
+}
 
 .nav-header{
     display: flex;
@@ -64,6 +67,9 @@ header a:hover{
     /* background-color: #ffc2c2; */
 }
 
+/* header */
+/* banner */
+
 #banner{
     height: 94vh;
     display: flex;
@@ -80,6 +86,8 @@ h1{
     letter-spacing: 10px;
     font-size: 5rem;
 }
+
+/* banner */
 
 #banner > a{
     text-transform: none;
@@ -98,6 +106,8 @@ h1{
     color: #383838;
 }
 
+/* banner */
+
 .container{
     padding: 35px;
 }
@@ -109,6 +119,7 @@ h2{
     padding: 10px 35px;
     background-color: #ffc2c2;
 }
+/* shop */
 
 #shopContainer{
     display: flex;
@@ -130,6 +141,64 @@ h2{
 .shop-item > .name{
     font-weight: 600;
 }
+
+/* shop */
+
+/* about */
+#aboutContainer{
+    position: relative;
+    display: flex;    
+    gap: 45px;
+    justify-content: space-between;
+}
+
+p.about-text{
+    font-size: 25px;
+    max-width: 50vw;
+    text-align: justify;
+}
+
+p.about-text{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-img{
+    width: 30vw;
+    z-index: 1;
+}
+
+#aboutContainer > span{
+    z-index: 1;
+    position: absolute;
+    font-size: 4rem;
+    color: #fff;
+    padding: 15px 45px;
+    background-color: #383838;
+}
+
+#aboutContainer > span:nth-child(odd){
+    bottom: 13%;
+    right: 40%;
+}
+
+#aboutContainer > span:nth-child(even){
+    bottom: 0%;
+    right: 20%;
+}
+
+.bg-box{
+    z-index: 0;
+    position: absolute;
+    top: -10%;
+    right: 28%;
+    height: 300px;
+    width: 100px;
+    background-color: #ffc2c2;
+}
+/* about */
+
 
 /* footer */
 footer{
@@ -162,5 +231,7 @@ footer{
     align-self: flex-end;
     /* color: #fff; */
 }
+
+/* footer */
 
 
