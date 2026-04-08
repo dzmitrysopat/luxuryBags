@@ -215,7 +215,7 @@ p.about-text{
     position: relative;
     display: flex;    
     /* gap: 45px; */
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #deliveryContainer > span{
@@ -238,10 +238,9 @@ p.about-text{
     left: 5%;
 }
 
-#deliveryContainer > div{
-    display: flex;
-    flex-direction: column;
+#deliveryContainer > p{
     font-size: 25px;
+    line-height: 40px;
 }
 
 #deliveryContainer > div > span{
@@ -264,20 +263,20 @@ footer{
     position: relative;
     display: flex;
     padding: 50px 25px;
-    /* gap: 50px; */
+    gap: 150px;
     align-items:flex-start;
 }
 
 .nav-footer{
-    padding: 15.3px;
-    background-color: #ffc2c2;
+    padding: 12px;
+    /* background-color: #ffc2c2; */
     gap: 15px;
     display: flex;
     flex-direction: column;
 }
 
 .nav-footer > a{
-    background-color: #ffc2c2;
+    /* background-color: #ffc2c2; */
     /* background-color: #fff; */
     color: #383838;
     padding: 5px 25px 5px 5px;
@@ -291,11 +290,11 @@ footer{
 
 footer > p{
     margin: 0;
-    padding: 25px;
+    /* padding: 25px; */
     font-size: 16px;
     line-height: 35px;
-    background-color: #383838;
-    color: #fff;
+    /* background-color: #383838; */
+    /* color: #fff; */
     text-transform: uppercase;
 }
 
