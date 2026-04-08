@@ -60,7 +60,8 @@ header a:hover{
     transition: all .4s;
 }
 
-.nav-header > a:hover{
+.nav-header > a:hover,
+.shom-item > .name{
     border: none;
     color: #fff;
     background-color: #383838;
@@ -76,7 +77,13 @@ header a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('./img/image\ 1.jpg');
+    contain: size;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    background-image: url('./img/banner_03.jpg');
+    /* background-image: url('./img/banner_04.png'); */
+
 }
 
 h1{
@@ -134,12 +141,16 @@ h2{
 }
 
 .shop-item > img{
-    width: 15vw;
-    height: 45vh;
+    width: 17.5vw;
 }
 
 .shop-item > .name{
     font-weight: 600;
+    width: fit-content;
+    text-align: left;
+    padding: 5px 25px 5px 10px;
+    color: #fff;
+    background: #383838;
 }
 
 /* shop */
@@ -153,7 +164,7 @@ h2{
 }
 
 p.about-text{
-    font-size: 25px;
+    font-size: 1.5em;
     max-width: 50vw;
     text-align: justify;
 }
@@ -165,7 +176,7 @@ p.about-text{
 }
 
 .about-img{
-    width: 30vw;
+    width: 30%;
     z-index: 1;
 }
 

@@ -75,7 +75,7 @@ nav{
 }
 
 #banner{
-    background-image: url('./img/image\ 1.jpg');
+    background-image: url('./img/shop/banner_01.jpg');
     display: flex;
     flex-direction: column;
     gap: 45px;

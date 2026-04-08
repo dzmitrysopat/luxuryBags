@@ -1,32 +1,32 @@
 [
   {
+    "id": 1,
     "name": "Сумка Classic",
     "price": 120,
-    "image": "./img/image 24.jpg"
+    "image": "./img/shop/item_010.png"
   },
   {
+    "id": 2,
     "name": "Сумка Premium",
     "price": 250,
-    "image": "./img/image 22.jpg"
+    "image": "./img/about.png"
   },
   {
+    "id": 3,
     "name": "Сумка Premium",
     "price": 250,
-    "image": "./img/image 23.jpg"
+    "image": "./img/shop/item_020.png"
   },
   {
+    "id": 4,
     "name": "Сумка Premium",
     "price": 250,
-    "image": "./img/image 25.jpg"
+    "image": "./img/shop/item_040.jpg"
   },
   {
+    "id": 5,
     "name": "Сумка Premium",
     "price": 250,
-    "image": "./img/image 21.jpg"
-  },
-  {
-    "name": "Сумка Premium",
-    "price": 250,
-    "image": "./img/image 27.jpg"
+    "image": "./img/shop/item_030.jpg"
   }
 ]
