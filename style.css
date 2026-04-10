@@ -36,14 +36,16 @@ header{
     align-items: center;
 }
 
-header > a{
+header > a,
+.footer-container > a{
     font-size: 30px;
     padding: 5px;
     border: 1px solid #383838;
     transition: all .4s;
 }
 
-header a:hover{
+header a:hover,
+.footer-container > a{
     border: 1px solid #ffc2c2;
     background-color: #ffc2c2;
 }
@@ -297,12 +299,26 @@ footer > p{
     /* padding: 25px; */
     font-size: 16px;
     line-height: 35px;
-    /* background-color: #383838; */
+    /* background-color: #ffc2c2; */
     /* color: #fff; */
     text-transform: uppercase;
 }
 
-.footer-copy{
+.footer-container > a{
+    scale: 1.5;
+    margin-left: 10px;
+}
+
+.no-redirect{
+    cursor: default;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8vh;
+    bottom: 20%;
     right: 5%;
     position: absolute;
     justify-self: end;

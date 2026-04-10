@@ -60,3 +60,8 @@ document.querySelector('.year').textContent = currentYear;
 
 setInterval(updateDateTime, 1000);
 
+document.querySelectorAll('.no-redirect').forEach(link => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault();
+  });
+});
