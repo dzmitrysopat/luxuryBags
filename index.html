@@ -6,14 +6,15 @@
     <title>Luxury Bags</title>
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <header>
         <a href="./index.html">lb</a>
         <nav class="nav-header">
+            <a href="#about">о нас</a>
             <a href="#shop">каталог</a>
             <a href="#delivery">доставка</a>
-            <a href="#about">о нас</a>
             <a href="#links">контакты</a>
         </nav>
         <a href="./index.html">lb</a>
@@ -70,8 +71,6 @@
 
         </section>
 
-        
-
         <section id="links" class="container">
             <h2 class="container-name">контакты</h2>
         </section>
@@ -96,6 +95,11 @@
         </p>
         <div class="footer-copy">© <span class="year"></span> LUXURY BAGS</div>
     </footer>
-    <script src="./script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        window.addEventListener("scroll", navHighlighter);
+});
+    </script>
+    <!-- <script src="./script.js"></script> -->
 </body>
 </html>

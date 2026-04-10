@@ -1,3 +1,33 @@
+let sections = document.querySelectorAll("section[id]");
+
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter() {
+  let scrollY = window.scrollY;
+
+  sections.forEach(current => {
+    let sectionHeight = current.offsetHeight;
+    let sectionTop = current.offsetTop - 200;
+    let sectionId = current.getAttribute("id");
+
+    let navLink = document.querySelector(
+      `header nav a[href*="${sectionId}"]`
+    );
+
+    if (!navLink) return; // предотвращает ошибку
+
+    if (
+      scrollY > sectionTop &&
+      scrollY <= sectionTop + sectionHeight
+    ) {
+      navLink.classList.add("active-link");
+    } else {
+      navLink.classList.remove("active-link");
+    }
+  });
+}
+
+
 fetch('shop.json')
     .then(response => response.json())
     .then(data => {
@@ -29,13 +59,4 @@ document.querySelector('.year').textContent = currentYear;
 }
 
 setInterval(updateDateTime, 1000);
-
-// card.innerHTML = `
-//             <article class="card">
-//                 <img src="" alt="">
-//                 <span class="name"></span>
-//                 <span class="price"></span>
-//             </article>
-//    
-
 

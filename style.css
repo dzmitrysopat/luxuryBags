@@ -61,6 +61,7 @@ header a:hover{
 }
 
 .nav-header > a:hover,
+.active-link,
 .shom-item > .name{
     border: none;
     color: #fff;
@@ -103,20 +104,26 @@ h1{
     text-decoration: none;
     color: #fff;
     transition: all .5s;
-    border: 2px solid #fff;
-    background-color: transparent;
+    /* border: 2px solid #fff; */
+    border: 2px solid #383838;
+    background-color: #383838;
+    /* background-color: transparent; */
 }
 
 #banner > a:hover{
-    border: 2px solid #383838;
-    background: #383838;
-    color: #fff;
+    /* border: 2px solid #383838; */
+    /* background: #383838; */
+    background-color: #ffc2c2;
+    border: 2px solid #ffc2c2;
+    color: #383838;
 }
 
 /* banner */
-
-.container{
+.container {
     padding: 35px;
+    scroll-margin-top: 2.5rem;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 h2{
@@ -172,6 +179,7 @@ p.about-text{
 p.about-text{
     z-index: 1;
     display: flex;
+    line-height: 25px;
     flex-direction: column;
 }
 
@@ -226,7 +234,7 @@ p.about-text{
     background: #ffc2c2;
     padding: 5px 25px;
     bottom: 5%;
-    left: 22%;
+    left: 17%;
     z-index: 1;
 }
 
@@ -239,7 +247,7 @@ p.about-text{
 }
 
 #deliveryContainer > p{
-    font-size: 25px;
+    font-size: 20px;
     line-height: 40px;
 }
 
@@ -251,15 +259,11 @@ p.about-text{
     background-color: #383838;
     padding: 5px 10px;
 }
-
-
-
 /* delivery */
-
-
 
 /* footer */
 footer{
+    background-color: #38383811;
     position: relative;
     display: flex;
     padding: 50px 25px;
@@ -279,7 +283,7 @@ footer{
     /* background-color: #ffc2c2; */
     /* background-color: #fff; */
     color: #383838;
-    padding: 5px 25px 5px 5px;
+    padding: 5px 25px;
     transition: all .4s;
 }
 
