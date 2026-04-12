@@ -13,13 +13,32 @@
 <body>
     <header>
         <a href="./index.html">lb</a>
-        <nav class="nav-header">
-            <a href="#about">о нас</a>
+        
+        <nav class="nav-header" id="navMenu">
+            <a href="#aboutContainer">о нас</a>
             <a href="#shop">каталог</a>
             <a href="#delivery">доставка</a>
             <a href="#links">контакты</a>
         </nav>
-        <a href="./index.html">lb</a>
+
+
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+         <div class="social-links">
+            <a href="#" target="_blank" class="social-item instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank" class="social-item telegram" aria-label="Telegram">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+            <a href="#" target="_blank" class="social-item tiktok" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
     </header>
     <main>
         <section id="banner" class="">
@@ -27,27 +46,25 @@
             <a href="#shop">Каталог</a>
         </section>
 
-        <section id="about" class="container">
-            <!-- <h2 class="container-name">о нас</h2> -->
-            <div id="aboutContainer">
-            <h2 class="container-name">о нас</h2>                
-            <p class="about-text">
-                Мы верим, что сумка - это не просто предмет гардероба, а отражение вашего характера. В нашем каталоге собраны модели, в которых эстетика встречается с функциональностью. От лаконичных шопперов для рабочих будней до изящных кросс-боди для вечерних прогулок — мы выбираем только те бренды и материалы, которые прослужат вам годами.
-                <br><br>
-                Натуральные материалы: кожа, замша и качественная экокожа.
-                <br><br>
-                Трендовые модели: следим за подиумами и привозим новинки сезона.
-                <br><br>
-                Гарантия качества: проверяем каждый шов и фурнитуру перед отправкой. Найдите сумку, которая станет вашей любимой деталью образа.
-            </p>
-
+        <section id="aboutContainer" class="container">
+            <article class="about-info">
+                <h2 class="container-name">о нас</h2>                
+                <p class="about-text">
+                    Мы верим, что сумка - это не просто предмет гардероба, а отражение вашего характера. В нашем каталоге собраны модели, в которых эстетика встречается с функциональностью. От лаконичных шопперов для рабочих будней до изящных кросс-боди для вечерних прогулок - мы выбираем только те бренды и материалы, которые прослужат вам годами.
+                    <br><br>
+                    Натуральные материалы: кожа, замша и качественная экокожа.
+                    <br><br>
+                    Трендовые модели: следим за подиумами и привозим новинки сезона.
+                    <br><br>
+                    Гарантия качества: проверяем каждый шов и фурнитуру перед отправкой. Найдите сумку, которая станет вашей любимой деталью образа.
+                </p>
+            </article>
                 <img src="./img/shop/item_032.png" alt="" class="about-img">
                 <span>LUXURY BAGS</span>
                 <span>FOR LUXURY WOMEN</span>
                 <div class="bg-box"></div>
                 <!-- <div class="bg-box"></div>
                 <div class="bg-box"></div> -->
-            </div>
         </section>
     
         <section id="shop" class="container">
@@ -84,20 +101,6 @@
             </h2>
 
             <article class="links-container">
-                <!-- <a href="https://t.me/Natalliya33" class="social-link" target="_blank">
-                    <span class="social-name">instagram</span>
-                    <img src="./img/social/insta.png" alt="instagram-link">
-                </a>
-                <a href="https://www.instagram.com/luxury_shopn.j/" class="social-link" target="_blank">
-                    <span class="social-name">telegram</span>
-                    <img src="./img/social/insta.png" alt="instagram-link">
-
-                </a>
-                <a href="luxuryshopnj3" class="social-link" target="_blank">
-                    <span class="social-name">tiktok</span>
-                    <img src="./img/social/tiktok_04.PNG" alt="">
-                </a>
-                -->
                 <div class="socials">
                 <a href="https://www.instagram.com/luxury_shopn.j/" target="_blank" class="instagram">
                     <div class="social-poster"></div>
@@ -127,7 +130,7 @@
         <nav class="nav-footer">
             <a href="#shop">каталог</a>
             <a href="#delivery">доставка</a>
-            <a href="#about">о нас</a>
+            <a href="#aboutContainer">о нас</a>
             <a href="#links">контакты</a>
         </nav>
 

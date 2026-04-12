@@ -51,6 +51,7 @@ header a:hover,
 }
 
 .nav-header{
+    justify-self: center;
     display: flex;
     gap:20px;
 }
@@ -69,6 +70,43 @@ header a:hover,
     color: #fff;
     background-color: #383838;
     /* background-color: #ffc2c2; */
+}
+
+header > .social-links{
+    flex-direction: row;
+}
+
+header > .social-links > .social-item{
+    box-shadow: none;
+    background: inherit;
+    border: none;
+}
+
+/* Burger */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background: #383838;
+    transition: 0.3s;
+}
+
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
 }
 
 /* header */
@@ -179,7 +217,7 @@ h2{
 }
 
 #aboutContainer > p.about-text{
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 p.about-text{
@@ -207,13 +245,13 @@ p.about-text{
 }
 
 #aboutContainer > span:nth-child(even){
-    bottom: 13%;
-    right: 40%;
+    bottom: -0%;
+    left: 30%;
 }
 
 #aboutContainer > span:nth-child(odd){
-    bottom: 0%;
-    right: 20%;
+    bottom: 12%;
+    left: 20%;
 }
 
 .bg-box{
@@ -233,7 +271,7 @@ p.about-text{
     position: relative;
     display: flex;    
     /* gap: 45px; */
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #deliveryContainer > span{
@@ -245,30 +283,22 @@ p.about-text{
     height: 60px;
     /* padding: 5px 25px; */
     bottom: 5%;
-    left: 18%;
+    left: 20%;
     /* z-index: 1; */
 }
 
 #deliveryContainer > .bg-box{
+    position: absolute;
     width: 250px;
     height: 250px;
     background-color: #383838;
-    top: 12%;
+    top: 35%;
     left: 5%;
 }
 
-.delivery-content > h2{
+/* .delivery-content > h2{
     background-color: #383838;
-}
-
-#deliveryContainer > div > span{
-    display: inline;
-    width: fit-content;
-    font-size: 25px;
-    color: #fff;
-    background-color: #383838;
-    padding: 5px 10px;
-}
+} */
 /* delivery */
 
 /* links */
@@ -487,36 +517,32 @@ footer > p{
 }
 
 .social-links {
-    margin-top: 35px;
     /* align-self: center; */
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
     gap: 25px;
 }
 
 /* Кнопки соцсетей */
 .social-item {
-    width: 60px;
-    height: 60px;
-    background: #ffffff;
+    /* border: 1px solid #383838; */
+    /* width: 45px;
+    height: 45px; */
+    /* background: #ffffff; */
     /* border-radius: 50%; */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 22px;
-    color: #333;
+    font-size: 30px;
+    color: #383838;
     text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
     transition: all 0.3s ease;
 }
 
-/* Эффект при наведении */
-.social-item:hover {
+.social-item:hover{
     transform: translateY(-5px);
-    background-color: #ffc2c2;
-    color: #ffffff;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .footer-container > a{
@@ -544,3 +570,191 @@ footer > p{
 /* footer */
 
 
+/* Burger Menu */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+    z-index: 1001;
+}
+
+.burger span {
+    width: 28px;
+    height: 3px;
+    background: #383838;
+    transition: 0.3s;
+}
+
+.burger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+        padding: 30px 60px;
+        text-align: center;
+    }
+
+    #shopContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .shop-item > img {
+        width: 30vw;
+    }
+
+    #aboutContainer,
+    #deliveryContainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    p.about-text {
+        max-width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .about-img {
+        width: 60%;
+    }
+
+    .socials a {
+        width: 40vw;
+        height: 30vh;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-container {
+        position: static;
+        align-items: flex-start;
+    }
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background: #383838;
+    transition: 0.3s;
+}
+
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav-header {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: #ffffff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: right 0.4s ease;
+        z-index: 1000;
+    }
+
+    .nav-header.active {
+        right: 0;
+    }
+
+    header .social-links {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding: 20px 30px;
+        letter-spacing: 5px;
+    }
+
+    #banner > a {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        margin-top: 80px;
+        padding: 20px;
+    }
+
+    .shop-item > img {
+        width: 80vw;
+    }
+
+    .socials a {
+        width: 80vw;
+        height: 30vh;
+    }
+
+    #links > h2 {
+        position: static;
+        transform: none;
+        rotate: 0deg;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+        letter-spacing: 3px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        padding: 8px 20px;
+    }
+
+    p.about-text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .about-img {
+        width: 80%;
+    }
+}

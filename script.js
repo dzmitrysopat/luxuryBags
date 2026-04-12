@@ -65,3 +65,23 @@ document.querySelectorAll('.no-redirect').forEach(link => {
     event.preventDefault();
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.getElementById("burger");
+    const navMenu = document.getElementById("navMenu");
+    const navLinks = document.querySelectorAll(".nav-header a");
+
+    burger.addEventListener("click", () => {
+        burger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        document.body.classList.toggle("no-scroll");
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            burger.classList.remove("active");
+            navMenu.classList.remove("active");
+            document.body.classList.remove("no-scroll");
+        });
+    });
+});
