@@ -3,9 +3,9 @@
     "id": 1,
     "name": "Сумка Premium",
     "price": 120,
-    "image": "./images/01_04.png",
-    "image2": "./images/01_02.png",
-    "image3": "./images/01_05.png"
+    "image": "/images/01_04.png",
+    "image2": "/images/01_02.png",
+    "image3": "/images/01_05.png"
   },
   {
     "id": 2,
