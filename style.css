@@ -197,6 +197,20 @@ h2{
     object-fit: cover;
 }
 
+.swiper-pagination-bullet{
+    background-color: #bbbbbb !important;
+    opacity: 1 !important;
+    }
+
+    .swiper-pagination-bullet-active{
+    background-color: #383838 !important;
+    opacity: 1 !important;
+    }
+
+    .swiper-pagination {
+        bottom: 5px !important;
+    }
+
 .name {
     display: block;
     font-size: 18px;

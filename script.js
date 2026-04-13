@@ -81,14 +81,18 @@ fetch('./shop.json')
     spaceBetween: 10,
     pagination: {
         el: `.${paginationClass}`,
-        clickable: true,
-        dynamicBullets: true
+        clickable: true
     },
     autoplay: images.length > 1 ? {
         delay: 3000,
         disableOnInteraction: false
     } : false,
-    grabCursor: true
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false
+    },
+    grabCursor: true,
+    simulateTouch: true,
 });
         });
     })
