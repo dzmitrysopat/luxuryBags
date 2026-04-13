@@ -28,7 +28,7 @@ function navHighlighter() {
 }
 
 
-fetch('shop.json')
+fetch('./shop.json')
     .then(response => {
         if (!response.ok) {
             throw new Error(`Ошибка загрузки JSON: ${response.status}`);
