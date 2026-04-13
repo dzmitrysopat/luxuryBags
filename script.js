@@ -29,21 +29,67 @@ function navHighlighter() {
 
 
 fetch('shop.json')
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Ошибка загрузки JSON: ${response.status}`);
+        }
+        return response.json();
+    })
     .then(data => {
         const container = document.getElementById("shopContainer");
+        container.innerHTML = "";
 
-        data.forEach(shop => {
+        data.forEach((product, index) => {
             const card = document.createElement('article');
             card.classList.add('shop-item');
 
+            // Собираем изображения из JSON
+            const images = [
+                product.image,
+                product.image2,
+                product.image3
+            ].filter(Boolean); // удаляет отсутствующие значения
+
+            // Генерация слайдов
+            let slidesHTML = images.map(img => `
+                <div class="swiper-slide">
+                    <img src="${img}" alt="${product.name}" class="photo">
+                </div>
+            `).join('');
+
+            // Уникальные классы для каждого свайпера
+            const swiperClass = `swiper-${index}`;
+            const paginationClass = `swiper-pagination-${index}`;
+
             card.innerHTML = `
-                <img src="${shop.image}" alt="" class="photo">
-                <span class="name">${shop.name}</span>
-                <span class="price">${shop.price} бел.руб</span>
+                <div class="swiper ${swiperClass}">
+                    <div class="swiper-wrapper">
+                        ${slidesHTML}
+                    </div>
+                    ${images.length > 1 ? `<div class="swiper-pagination ${paginationClass}"></div>` : ""}
+                </div>
+                <span class="name">${product.name}</span>
+                <span class="price">${product.price} бел.руб</span>
             `;
 
             container.appendChild(card);
+
+            // Инициализация Swiper только после добавления в DOM
+            new Swiper(`.${swiperClass}`, {
+    loop: images.length > 1,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+        el: `.${paginationClass}`,
+        clickable: true,
+        dynamicBullets: true
+    },
+    autoplay: images.length > 1 ? {
+        delay: 3000,
+        disableOnInteraction: false
+    } : false,
+    grabCursor: true
+});
         });
     })
     .catch(error => console.error('Ошибка:', error));
