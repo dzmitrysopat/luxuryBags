@@ -741,6 +741,16 @@ footer > p{
     span{
         display: none;
     }
+
+    .social-links,
+    .footer-container{
+        flex-direction: row;
+    }
+
+    .footer-container{
+        align-items: center;
+        justify-content: space-evenly;
+    }
 }
 
 @media (max-width: 480px) {
