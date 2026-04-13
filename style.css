@@ -736,6 +736,11 @@ footer > p{
         rotate: 0deg;
         margin-bottom: 20px;
     }
+
+    .bg-box,
+    span{
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
