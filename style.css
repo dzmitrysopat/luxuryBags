@@ -119,7 +119,7 @@ header > .social-links > .social-item{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    contain: size;
+    /* contain: size; */
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
