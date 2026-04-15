@@ -781,6 +781,10 @@ footer > p{
         letter-spacing: 5px;
     }
 
+    #banner{
+        background-image: url('./images/banner/045_01.png');
+    }
+
     #banner > a {
         font-size: 1.2rem;
     }
