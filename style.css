@@ -740,6 +740,9 @@ footer > p{
         display: none;
     }
 
+    h2{
+        border: 2px solid #383838;
+    }
 
     .burger {
         display: flex;
