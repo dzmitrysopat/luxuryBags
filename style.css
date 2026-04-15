@@ -722,6 +722,8 @@ footer > p{
     }
 
     #banner{
+        min-height: 94vh;
+        min-height: 94svh;
         background-attachment: scroll;
     }
 
@@ -830,6 +832,7 @@ footer > p{
 
 @media (max-width: 480px) {
     #banner{
+        min-height: 94svh;
         background-attachment: scroll;
     }
 
