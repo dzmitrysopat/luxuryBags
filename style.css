@@ -853,6 +853,19 @@ footer > p{
     .links-container{
         margin-left: 0;
     }
+
+    footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    footer > .social-links{
+        flex-direction: column;
+    }
+
+    .footer-container{
+        justify-content: space-between;
+    }
 }
 
 @media (max-width: 480px) {
