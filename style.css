@@ -862,10 +862,6 @@ footer > p{
     footer > .social-links{
         flex-direction: column;
     }
-
-    .footer-container{
-        justify-content: space-between;
-    }
 }
 
 @media (max-width: 480px) {
