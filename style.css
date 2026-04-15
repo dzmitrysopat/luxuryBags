@@ -250,7 +250,7 @@ h2{
 }
 
 #aboutContainer > p.about-text{
-    margin-top: 150px;
+    /* margin-top: 150px; */
 }
 
 p.about-text{
@@ -268,10 +268,9 @@ p.about-text{
     z-index: 1;
 }
 
-#aboutContainer > span{
+marquee > span{
     z-index: 1;
-    position: absolute;
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: #fff;
     padding: 15px 45px;
     background-color: #383838;
@@ -493,7 +492,7 @@ footer{
     position: relative;
     display: flex;
     padding: 50px 25px;
-    gap: 150px;
+    gap: 100px;
     align-items:flex-start;
 }
 
@@ -691,7 +690,8 @@ footer > p{
     }
 
     .bg-box,
-    span:not(.burger > span, .shop-item > span, span.year){
+    span:not(.burger > span, .shop-item > span, span.year,
+    marquee > span){
         display: none;
 }
 }
@@ -808,12 +808,23 @@ footer > p{
         flex-direction: column;
     }
 
+    #aboutContainer{
+        flex-direction: column-reverse;
+    }
+
+    .about-info > h2,
+    .delivery-content > h2 {
+        position: absolute;
+        top: 35%;
+        z-index: 2;
+    }
+
     /* #deliveryContainer{
         flex-direction: column-reverse;
     } */
 
     .about-img{
-        width: 90vw !important;
+        width: 70vw ;
     }
 
     .socials a{
