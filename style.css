@@ -736,6 +736,11 @@ footer > p{
 }
 
 @media (max-width: 768px) {
+    marquee{
+        display: none;
+    }
+
+
     .burger {
         display: flex;
     }
