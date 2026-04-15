@@ -300,6 +300,7 @@ marquee > span{
 
 /* delivery */
 #deliveryContainer{
+    gap: 45px;
     width: 100%;
     position: relative;
     display: flex;    
@@ -613,6 +614,23 @@ footer > p{
     overflow: hidden;
 }
 
+@media (max-width: 1400px) {
+    .bg-box,
+    span:not(.burger > span, .shop-item > span, span.year,
+    marquee > span){
+        display: none;
+    }
+
+    p.about-text {
+        max-width: 90%;
+        /* font-size: 1.2rem; */
+    }
+
+    .about-img{
+        width: 30vw ;
+    }
+}
+
 @media (max-width: 1024px) {
     h1 {
         font-size: 3rem;
@@ -689,12 +707,6 @@ footer > p{
         rotate: 0deg;
         margin-bottom: 20px;
     }
-
-    .bg-box,
-    span:not(.burger > span, .shop-item > span, span.year,
-    marquee > span){
-        display: none;
-}
 }
 
 .burger {
@@ -722,9 +734,6 @@ footer > p{
 .burger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
 }
-
-
-
 
 @media (max-width: 768px) {
     .burger {
@@ -829,7 +838,12 @@ footer > p{
     }
 
     .socials a{
+        height: 35vh;
         width: 90vw;
+    }
+
+    .social-poster{
+        height: 100%;
     }
 
     .social-blur{
