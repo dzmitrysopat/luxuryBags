@@ -202,14 +202,14 @@ h2{
     opacity: 1 !important;
     }
 
-    .swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active{
     background-color: #383838 !important;
     opacity: 1 !important;
-    }
+}
 
-    .swiper-pagination {
-        bottom: 5px !important;
-    }
+.swiper-pagination {
+    bottom: 5px !important;
+}
 
 .name {
     display: block;
@@ -303,7 +303,6 @@ p.about-text{
     width: 100%;
     position: relative;
     display: flex;    
-    /* gap: 45px; */
     justify-content: space-evenly;
 }
 
@@ -633,18 +632,18 @@ footer > p{
 
     #aboutContainer,
     #deliveryContainer {
-        flex-direction: column;
+        gap: 45px;
         align-items: center;
         text-align: center;
+    }
+
+    .about-img{
+        width: 40%;
     }
 
     p.about-text {
         max-width: 90%;
         font-size: 1.2rem;
-    }
-
-    .about-img {
-        width: 60%;
     }
 
     .socials a {
@@ -660,6 +659,24 @@ footer > p{
     .footer-container {
         position: static;
         align-items: flex-start;
+    }
+
+    
+    .social-poster{
+        width: 100%;
+    }
+
+    .social-links,
+    .footer-container{
+        flex-direction: row;
+    }
+
+    .footer-container{
+        margin-left: 5%;
+        align-self:auto;
+        position: relative;
+        flex-direction: row-reverse;
+        align-items: center;
     }
 }
 
@@ -692,7 +709,7 @@ footer > p{
     .bg-box,
     span:not(.burger > span, .shop-item > span, span.year){
         display: none;
-    }
+}
 
 
 @media (max-width: 768px) {
@@ -726,12 +743,6 @@ footer > p{
     header .social-links {
         display: none;
     }
-
-    /* #banner{
-        min-height: 94vh;
-        min-height: 94svh;
-        background-attachment: scroll;
-    } */
 
     h1 {
         font-size: 2rem;
@@ -779,6 +790,15 @@ footer > p{
         font-size: 1.2rem !important;
     }
 
+    #aboutContainer,
+    #deliveryContainer {
+        flex-direction: column;
+    }
+
+    .about-img {
+        width: 60%;
+    }
+
     #deliveryContainer{
         flex-direction: column-reverse;
     }
@@ -813,23 +833,6 @@ footer > p{
 
     .links-container{
         margin-left: 0;
-    }
-
-    .social-poster{
-        width: 100%;
-    }
-
-    .social-links,
-    .footer-container{
-        flex-direction: row;
-    }
-
-    .footer-container{
-        margin-left: 5%;
-        align-self:auto;
-        position: relative;
-        flex-direction: row-reverse;
-        align-items: center;
     }
 }
 
