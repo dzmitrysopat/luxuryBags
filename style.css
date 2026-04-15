@@ -689,6 +689,11 @@ footer > p{
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
+    .bg-box,
+    span:not(.burger > span, .shop-item > span, span.year){
+        display: none;
+    }
+
 
 @media (max-width: 768px) {
     .burger {
@@ -812,11 +817,6 @@ footer > p{
 
     .social-poster{
         width: 100%;
-    }
-
-    .bg-box,
-    span:not(.burger > span, .shop-item > span, span.year){
-        display: none;
     }
 
     .social-links,
