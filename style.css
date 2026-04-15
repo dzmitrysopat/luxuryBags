@@ -721,6 +721,10 @@ footer > p{
         display: none;
     }
 
+    #banner{
+        background-attachment: scroll;
+    }
+
     h1 {
         font-size: 2rem;
         padding: 20px 30px;
