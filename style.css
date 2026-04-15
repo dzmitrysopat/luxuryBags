@@ -721,11 +721,11 @@ footer > p{
         display: none;
     }
 
-    #banner{
+    /* #banner{
         min-height: 94vh;
         min-height: 94svh;
         background-attachment: scroll;
-    }
+    } */
 
     h1 {
         font-size: 2rem;
