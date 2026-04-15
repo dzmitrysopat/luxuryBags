@@ -816,7 +816,7 @@ footer > p{
     .about-info > h2,
     .delivery-content > h2 {
         position: absolute;
-        top: 25%;
+        top: 30%;
         z-index: 2;
     }
 
