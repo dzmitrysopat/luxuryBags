@@ -822,13 +822,17 @@ footer > p{
     }
 
     .footer-container{
-        align-items: center;
+        /* align-items: center; */
         /* gap: 150px; */
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
     }
 }
 
 @media (max-width: 480px) {
+    #banner{
+        background-attachment: scroll;
+    }
+
     h1 {
         font-size: 1.6rem;
         letter-spacing: 3px;
