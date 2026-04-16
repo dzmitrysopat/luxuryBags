@@ -197,18 +197,18 @@ h2{
     object-fit: cover;
 }
 
+.swiper-pagination{
+    position: sticky !important;
+}
+
 .swiper-pagination-bullet{
     background-color: #bbbbbb !important;
     opacity: 1 !important;
-    }
+}
 
 .swiper-pagination-bullet-active{
     background-color: #383838 !important;
     opacity: 1 !important;
-}
-
-.swiper-pagination {
-    bottom: 5px !important;
 }
 
 .name {
@@ -614,7 +614,7 @@ footer > p{
 @media (max-width: 1400px) {
     .bg-box,
     span:not(.burger > span, .shop-item > span, span.year,
-    marquee > span){
+    marquee > span, span.swiper-pagination-bullet){
         display: none;
     }
 
@@ -704,6 +704,7 @@ footer > p{
         rotate: 0deg;
         margin-bottom: 20px;
     }
+
 }
 
 .burger {
@@ -736,10 +737,6 @@ footer > p{
     marquee{
         display: none;
     }
-
-    /* h2{
-        border: 2px solid #383838;
-    } */
 
     .burger {
         display: flex;
@@ -799,25 +796,6 @@ footer > p{
     height: 65vh;
     margin-bottom: 10px;
     overflow: hidden;
-    }
-
-    .swiper-pagination-bullet{
-    background-color: #bbbbbb !important;
-    opacity: 1 !important;
-    }
-
-    .swiper-pagination-bullet-active{
-    background-color: #383838 !important;
-    opacity: 1 !important;
-    }
-
-    .swiper-pagination {
-        bottom: 5px !important;
-    }
-
-    .swiper-pagination-bullet {
-        width: 6px;
-        height: 6px;
     }
 
     p.about-text {

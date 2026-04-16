@@ -66,6 +66,8 @@ fetch('./shop.json')
                     <div class="swiper-wrapper">
                         ${slidesHTML}
                     </div>
+                </div>
+                <div class="pagination-container">
                     ${images.length > 1 ? `<div class="swiper-pagination ${paginationClass}"></div>` : ""}
                 </div>
                 <span class="name">${product.name}</span>
