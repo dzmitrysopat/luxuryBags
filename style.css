@@ -6,7 +6,7 @@
     font-weight: 100;
     scroll-behavior: smooth;
     color: #383838;
-        /* outline: 2px solid lightgreen; */
+    /* outline: 2px solid lightgreen; */
 }
 
 body{
@@ -24,7 +24,6 @@ h1,h2,a{
 }
 
 /* header */
-
 header{
     z-index: 11;
     background: #fff;
@@ -69,7 +68,6 @@ header a:hover,
     border: none;
     color: #fff;
     background-color: #383838;
-    /* background-color: #ffc2c2; */
 }
 
 header > .social-links{
@@ -81,7 +79,6 @@ header > .social-links > .social-item{
     background: inherit;
     border: none;
 }
-
 
 /* Burger */
 .burger {
@@ -109,10 +106,9 @@ header > .social-links > .social-item{
 .burger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
 }
-
 /* header */
-/* banner */
 
+/* banner */
 #banner{
     height: 94vh;
     display: flex;
@@ -136,6 +132,7 @@ h1{
     font-size: 5rem;
 }
 
+
 /* banner */
 
 #banner > a{
@@ -145,21 +142,18 @@ h1{
     text-decoration: none;
     color: #fff;
     transition: all .5s;
-    /* border: 2px solid #fff; */
     border: 2px solid #383838;
     background-color: #383838;
-    /* background-color: transparent; */
 }
 
 #banner > a:hover{
-    /* border: 2px solid #383838; */
-    /* background: #383838; */
     background-color: #ffc2c2;
     border: 2px solid #ffc2c2;
     color: #383838;
 }
 
 /* banner */
+
 .container {
     margin: 150px auto 0;
     padding: 35px;
@@ -314,10 +308,8 @@ marquee > span{
     background: #ffc2c2;
     width: 300px;
     height: 60px;
-    /* padding: 5px 25px; */
     bottom: 5%;
     left: 20%;
-    /* z-index: 1; */
 }
 
 #deliveryContainer > .bg-box{
@@ -333,9 +325,7 @@ marquee > span{
 
 /* links */
 #links{
-    margin-top: 150px;
     scroll-margin-top: 10rem;
-    margin-top: 100px;
     position: relative;
 }
 
@@ -359,16 +349,12 @@ h2 > .bg-box{
 .links-container{
     margin-left: 10%;
     display: flex;
-    /* flex-direction: column; */
-    /* gap: 100px; */
-    /* justify-content: center; */
     justify-content: flex-start;
 }
 
 .socials{
     margin: 50px 0 0;
     display: flex;
-    /* justify-content: center; */
     gap: 50px;
     flex-wrap: wrap;
 }
@@ -420,7 +406,6 @@ h2 > .bg-box{
     padding: 5px 15px;
     font-size: 40px;
     background-color: #383838;
-    /* opacity: 0.7; */
     color: #fff;
     transition: all .5s;
 }
@@ -467,12 +452,10 @@ h2 > .bg-box{
     border: 2px solid #383838;
     top: 5px;
     left: -25px;
-    /* left: -100px; */
     position: absolute;
     font-size: 25px;
     padding: 5px 25px;
     background-color: #ffc2c2;
-    /* rotate: -90deg; */
 }
 
 .social-link:hover > .social-link > span{
@@ -497,15 +480,12 @@ footer{
 
 .nav-footer{
     padding: 12px;
-    /* background-color: #ffc2c2; */
     gap: 15px;
     display: flex;
     flex-direction: column;
 }
 
 .nav-footer > a{
-    /* background-color: #ffc2c2; */
-    /* background-color: #fff; */
     color: #383838;
     padding: 5px 25px;
     transition: all .4s;
@@ -518,16 +498,12 @@ footer{
 
 footer > p{
     margin: 0;
-    /* padding: 25px; */
     font-size: 16px;
     line-height: 35px;
-    /* background-color: #ffc2c2; */
-    /* color: #fff; */
     text-transform: uppercase;
 }
 
 .social-links {
-    /* align-self: center; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -536,18 +512,13 @@ footer > p{
 
 /* Кнопки соцсетей */
 .social-item {
-    /* border: 1px solid #383838; */
-    /* width: 45px;
-    height: 45px; */
-    /* background: #ffffff; */
-    /* border-radius: 50%; */
+
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
     color: #383838;
     text-decoration: none;
-    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
     transition: all 0.3s ease;
 }
 
@@ -573,8 +544,8 @@ footer > p{
     right: 5%;
     position: absolute;
 }
-
 /* footer */
+
 /* Burger Menu */
 .burger {
     display: none;
@@ -616,7 +587,6 @@ footer > p{
 
     p.about-text {
         max-width: 90%;
-        /* font-size: 1.2rem; */
     }
 
     .about-img{
@@ -779,7 +749,7 @@ footer > p{
     }
 
     .container {
-        margin: 50px 0;
+        margin: 0 auto;
         padding: 20px;
     }
 
