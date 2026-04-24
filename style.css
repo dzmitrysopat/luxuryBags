@@ -777,6 +777,18 @@ footer > p{
         padding: 20px;
     }
 
+    #shopContainer > a{
+    padding: 5px 25px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 25px;
+    border: 2px solid #383838;
+    background: #383838;
+    color: #fff;
+    text-align: left;
+    transition: all .4s;
+}
+
     .swiper {
     width: 100%;
     height: 65vh;
