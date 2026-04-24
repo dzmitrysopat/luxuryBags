@@ -163,6 +163,7 @@ h1{
 }
 
 h2{
+    box-shadow: 10px -10px 0px 0px #383838;
     color: #fff;
     font-size: 35px;
     width: fit-content;
@@ -260,10 +261,10 @@ h2{
     justify-content: space-evenly;
 }
 
-#aboutContainer > h2{
-    left: 8.5%;
-    position: absolute;
+.about-info > h2{
+    position: relative;
     height: fit-content;
+    z-index: 3;
 }
 
 p.about-text{
