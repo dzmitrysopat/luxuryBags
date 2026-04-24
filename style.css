@@ -155,7 +155,7 @@ h1{
 /* banner */
 
 .container {
-    margin: 0 auto 0;
+    margin: 0 auto;
     padding: 35px;
     scroll-margin-top: 5rem;
     max-width: 100%;
@@ -175,6 +175,28 @@ h2{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
+}
+
+#shopContainer > a{
+    width: 100%;
+    height: 400px;
+    font-size: 25px;
+    border: 2px solid #383838;
+    background: #383838;
+    color: #fff;
+    text-align: center;
+    align-content: center;
+    transition: all .4s;
+}
+
+#shopContainer > a:hover{
+    color: #383838;
+    border: 2px solid #ffc2c2;
+    background-color: #ffc2c2;
+}
+
+#shopContainer > a:not(:last-child){
+    display: none;
 }
 
 .swiper {
@@ -231,6 +253,7 @@ h2{
 
 /* about */
 #aboutContainer{
+    margin: 150px auto 0;
     position: relative;
     display: flex;    
     gap: 45px;
@@ -294,6 +317,7 @@ marquee > span{
 
 /* delivery */
 #deliveryContainer{
+    margin: 100px auto;
     gap: 45px;
     width: 100%;
     position: relative;

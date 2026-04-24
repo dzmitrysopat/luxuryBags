@@ -46,8 +46,10 @@ fetch('./shop.json')
     const productsToShow = isHomePage ? data.slice(0, 10) : data;
 
     productsToShow.forEach((product, index) => {
+            const shopLink = document.createElement('a');
             const card = document.createElement('article');
             card.classList.add('shop-item');
+            shopLink.href = "./shop.html";
 
             // Собираем изображения из JSON
             const images = [
@@ -80,7 +82,14 @@ fetch('./shop.json')
                 <span class="price">${product.price} бел.руб</span>
             `;
 
+            shopLink.innerHTML = `Все товары`
+
             container.appendChild(card);
+            container.appendChild(shopLink);
+
+            if (!isHomePage) {
+                shopLink.style.display = 'none'
+            }
 
             // Инициализация Swiper только после добавления в DOM
             new Swiper(`.${swiperClass}`, {
