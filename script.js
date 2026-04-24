@@ -80,6 +80,7 @@ fetch('./shop.json')
                 </div>
                 <span class="name">${product.name}</span>
                 <span class="price">${product.price} бел.руб</span>
+                <span class="price description">${product.description}</span>
             `;
 
             shopLink.innerHTML = `Больше сумочек`

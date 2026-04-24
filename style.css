@@ -212,6 +212,10 @@ h2{
     overflow: hidden;
 }
 
+.pagination-container{
+    height: 18px;
+}
+
 .swiper-slide img {
     width: 100%;
     height: 100%;
@@ -225,6 +229,10 @@ h2{
 .swiper-pagination-bullet{
     background-color: #bbbbbb !important;
     opacity: 1 !important;
+}
+
+span.description{
+    color: #383838b2;
 }
 
 .swiper-pagination-bullet-active{
@@ -276,7 +284,7 @@ p.about-text{
     text-align: justify;
     z-index: 1;
     display: flex;
-    line-height: 25px;
+    line-height: 26px;
     flex-direction: column;
     font-size: 1.5rem;
 }
