@@ -82,7 +82,7 @@ fetch('./shop.json')
                 <span class="price">${product.price} бел.руб</span>
             `;
 
-            shopLink.innerHTML = `Все товары`
+            shopLink.innerHTML = `Больше сумочек`
 
             container.appendChild(card);
             container.appendChild(shopLink);
