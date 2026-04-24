@@ -813,6 +813,7 @@ footer > p{
 
     .about-info > h2,
     .delivery-content > h2 {
+        box-shadow: none;
         position: absolute;
         top: 30%;
         z-index: 1;
