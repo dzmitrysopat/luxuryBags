@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- библиотека -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <title>Admin</title>
+</head>
+<body>
+
+<input id="name" placeholder="Название">
+<input id="price" type="number" placeholder="Цена">
+<input id="images" type="file" multiple>
+
+<button onclick="addProduct()">Добавить</button>
+
+<script>
+/* ВАЖНО: объявление client должно быть здесь */
+const client = supabase.createClient(
+  'https://vdbjocecizouratzzmif.supabase.co',
+  'sb_publishable_3Y1AR6yUtE9xlyYdB5x3pw_G2fiFmxJ'
+);
+
+console.log('client:', client); // проверка
+
+async function addProduct() {
+
+    const name = document.getElementById('name').value;
+    const price = document.getElementById('price').value;
+    const files = document.getElementById('images').files;
+
+    const urls = [];
+
+    for (const file of files) {
+        const fileName = Date.now() + file.name;
+
+        await client.storage
+            .from('products')
+            .upload(fileName, file);
+
+        const { data } = client.storage
+            .from('products')
+            .getPublicUrl(fileName);
+
+        urls.push(data.publicUrl);
+    }
+
+    await client.from('products').insert([{
+        name,
+        price,
+        images: urls
+    }]);
+
+    alert('OK');
+}
+</script>
+
+</body>
+</html>

@@ -36,10 +36,16 @@ fetch('./shop.json')
         return response.json();
     })
     .then(data => {
-        const container = document.getElementById("shopContainer");
-        container.innerHTML = "";
+    const container = document.getElementById("shopContainer");
+    container.innerHTML = "";
 
-        data.forEach((product, index) => {
+    const isHomePage =
+        window.location.pathname.includes("index.html") ||
+        window.location.pathname === "/";
+
+    const productsToShow = isHomePage ? data.slice(0, 10) : data;
+
+    productsToShow.forEach((product, index) => {
             const card = document.createElement('article');
             card.classList.add('shop-item');
 

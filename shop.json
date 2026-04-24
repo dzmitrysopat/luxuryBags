@@ -1,6 +1,75 @@
 [
   {
-    "id": 1,
+    "name": "Сумка Premium",
+    "price": 120,
+    "image": "images/10_01.PNG",
+    "image2": "images/10_02.PNG",
+    "image3": "images/10_06.PNG"
+  },
+  {
+    "name": "Сумка Premium",
+    "price": 120,
+    "image": "images/11_01.PNG",
+    "image2": "images/11_02.PNG",
+    "image3": "images/11_03.PNG"
+  },
+  {
+    "name": "Сумка Premium",
+    "price": 120,
+    "image": "images/12_01.PNG",
+    "image2": "images/12_02.PNG",
+    "image3": "images/12_05.PNG"
+  },
+  {
+    "name": "Сумка Premium",
+    "price": 120,
+    "image": "images/13_03.PNG",
+    "image2": "images/13_06.PNG",
+    "image3": "images/13_05.PNG"
+  },
+  {
+    "name": "Сумка Premium",
+    "price": 120,
+    "image": "images/14_04.PNG",
+    "image2": "images/14_03.PNG",
+    "image3": "images/14_02.PNG"
+  },
+  {
+    "name": "Сумка Premium",
+    "price": 120,
+    "image": "images/15_01.PNG",
+    "image2": "images/15_02.PNG",
+    "image3": "images/15_04.PNG"
+  },
+  {
+    "name": "Сумка Premium",
+    "price": 120,
+    "image": "images/16_01.PNG",
+    "image2": "images/16_03.PNG",
+    "image3": "images/16_06.PNG"
+  },
+  {
+    "name": "Сумка Premium",
+    "price": 120,
+    "image": "images/17_08.PNG",
+    "image2": "images/17_05.PNG",
+    "image3": "images/17_07.PNG"
+  },
+    {
+    "name": "Сумка Premium",
+    "price": 120,
+    "image": "images/18_02.PNG",
+    "image2": "images/18_04.PNG",
+    "image3": "images/18_05.PNG"
+  },
+  {
+    "name": "Сумка Premium",
+    "price": 120,
+    "image": "images/19_01.PNG",
+    "image2": "images/19_02.PNG",
+    "image3": "images/19_03.PNG"
+  },
+  {
     "name": "Сумка Premium",
     "price": 120,
     "image": "images/01_04.PNG",
@@ -8,7 +77,6 @@
     "image3": "images/01_05.PNG"
   },
   {
-    "id": 2,
     "name": "Сумка Classic",
     "price": 250,
     "image": "images/02_01.PNG",
@@ -17,7 +85,6 @@
 
   },
   {
-    "id": 3,
     "name": "Сумка Classic",
     "price": 25,
     "image": "images/03_01.PNG",
@@ -26,7 +93,6 @@
 
   },
   {
-    "id": 4,
     "name": "Сумка Premium",
     "price": 50,
     "image": "images/04_01.PNG",
@@ -35,7 +101,6 @@
 
   },
   {
-    "id": 5,
     "name": "Сумка Premium",
     "price": 350,
     "image": "images/05_01.PNG",
@@ -43,14 +108,12 @@
     "image3": "images/05_03.PNG"
   },
   {
-    "id": 6,
     "name": "Сумка Premium",
     "price": 170,
     "image": "images/06_01.PNG",
     "image2": "images/06_02.PNG"
   },
   {
-    "id": 7,
     "name": "Сумка Premium",
     "price": 90,
     "image": "images/07_01.PNG",
@@ -58,14 +121,12 @@
     "image3": "images/07_03.PNG"
   },
   {
-    "id": 8,
     "name": "Сумка Premium",
     "price": 550,
     "image": "images/08_01.PNG",
     "image2": "images/08_02.PNG"
   },
   {
-    "id": 9,
     "name": "Сумка Premium",
     "price": 400,
     "image": "images/09.PNG"
