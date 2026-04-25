@@ -158,6 +158,7 @@ let imgs = ['images/banner/045_01.PNG',
         './images/banner/038.PNG',
         './images/banner/045.PNG',
         './images/banner/043.PNG',
+        './images/banner/banner_03.jpg',
         ]; //   Добавьте свои картинки через запятую
         let banner = document.getElementById("banner");
     let randomIndex = Math.floor(Math.random() * imgs.length);
