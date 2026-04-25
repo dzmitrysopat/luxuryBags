@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-let imgs = ['images/banner/045_01.PNG',
+let imgs = ['images/banner/045_01.png',
         './images/banner/038.PNG',
         './images/banner/045.PNG',
         './images/banner/043.PNG',
