@@ -154,12 +154,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-let imgs = ['images/banner/019.PNG',
-        './images/banner/020.PNG',
-        './images/banner/028.PNG',
-        './images/banner/035.PNG',
-        './images/banner/17_01.PNG',
-        './images/banner/042.PNG']; //   Добавьте свои картинки через запятую
+let imgs = ['images/banner/045_01.PNG',
+        './images/banner/038.PNG',
+        './images/banner/045.PNG',
+        './images/banner/043.PNG',
+        ]; //   Добавьте свои картинки через запятую
         let banner = document.getElementById("banner");
     let randomIndex = Math.floor(Math.random() * imgs.length);
     banner.style.backgroundImage = `url('${imgs[randomIndex]}')`;
