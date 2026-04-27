@@ -155,9 +155,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 let imgs = [
-        './images/banner/043.PNG',
-        './images/banner/banner_03.jpg',
-        './images/banner/banner_06.jpg',
+        // './images/banner/043.PNG',
+        // './images/banner/banner_03.jpg',
+        // './images/banner/banner_06.jpg',
         './images/banner/banner_01.jpg',
         ]; //   Добавьте свои картинки через запятую
         let banner = document.getElementById("banner");
