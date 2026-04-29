@@ -3,152 +3,152 @@
     "name": "Chloe",
     "price": 250,
     "description":"Натуральная кожа. Комплект: коробка, пыльник, документы",
-    "image": "/images/10_01.PNG",
-    "image2": "/images/10_02.PNG",
-    "image3": "/images/10_06.PNG"
+    "image": "images/10_01.PNG",
+    "image2": "images/10_02.PNG",
+    "image3": "images/10_06.PNG"
   },
   {
     "name": "BOTTEGA VENETA",
     "price": 230,
     "description":"Натуральная кожа. Комплект: коробка, пыльник, документы",
-    "image": "/images/11_01.PNG",
-    "image2": "/images/11_02.PNG",
-    "image3": "/images/11_03.PNG"
+    "image": "images/11_01.PNG",
+    "image2": "images/11_02.PNG",
+    "image3": "images/11_03.PNG"
   },
   {
     "name": "FURLA",
     "price": 250,
     "description":"Натуральная кожа. Комплект: коробка, пыльник, документы",
-    "image": "/images/12_01.PNG",
-    "image2": "/images/12_02.PNG",
-    "image3": "/images/12_05.PNG"
+    "image": "images/12_01.PNG",
+    "image2": "images/12_02.PNG",
+    "image3": "images/12_05.PNG"
   },
   {
     "name": "PINKO",
     "price": 180,
     "description":"Качество Люкс. Комплект: коробка",
-    "image": "/images/13_03.PNG",
-    "image2": "/images/13_06.PNG",
-    "image3": "/images/13_05.PNG"
+    "image": "images/13_03.PNG",
+    "image2": "images/13_06.PNG",
+    "image3": "images/13_05.PNG"
   },
   {
     "name": "GIVENCHY",
     "price": 160,
     "description":"Люкс качество. Комплект: коробка. Размер : 20*8*13 cм",
-    "image": "/images/14_04.PNG",
-    "image2": "/images/14_03.PNG",
-    "image3": "/images/14_02.PNG"
+    "image": "images/14_04.PNG",
+    "image2": "images/14_03.PNG",
+    "image3": "images/14_02.PNG"
   },
   {
     "name": "BALMAIN",
     "price": 170,
     "description":"Люкс качество. Размер: 32*10*26 см",
-    "image": "/images/15_01.PNG",
-    "image2": "/images/15_02.PNG",
-    "image3": "/images/15_04.PNG"
+    "image": "images/15_01.PNG",
+    "image2": "images/15_02.PNG",
+    "image3": "images/15_04.PNG"
   },
   {
     "name": "IVE SAINT LAUREN",
     "price": 170,
     "description":"Качество люкс. Размер: 20*20 см",
-    "image": "/images/16_01.PNG",
-    "image2": "/images/16_03.PNG",
-    "image3": "/images/16_06.PNG"
+    "image": "images/16_01.PNG",
+    "image2": "images/16_03.PNG",
+    "image3": "images/16_06.PNG"
   },
   {
     "name": "Dior",
     "price": 130,
     "description":"Комплект: коробка, пыльник. Размер 24*9*18 см",
-    "image": "/images/17_08.PNG",
-    "image2": "/images/17_05.PNG",
-    "image3": "/images/17_07.PNG"
+    "image": "images/17_08.PNG",
+    "image2": "images/17_05.PNG",
+    "image3": "images/17_07.PNG"
   },
     {
     "name": "LANVIN",
     "price": 185,
     "description":"Эко Люкс. Комплект: коробка, пыльник. Размер 26*10 см",
-    "image": "/images/18_02.PNG",
-    "image2": "/images/18_04.PNG",
-    "image3": "/images/18_05.PNG"
+    "image": "images/18_02.PNG",
+    "image2": "images/18_04.PNG",
+    "image3": "images/18_05.PNG"
   },
   {
     "name": "PINKO",
     "price": 135,
     "description":"Эко кожа люкс. Комплект: коробка, пыльник. Размер: 22*8*15 см",
-    "image": "/images/19_01.PNG",
-    "image2": "/images/19_02.PNG",
-    "image3": "/images/19_03.PNG"
+    "image": "images/19_01.PNG",
+    "image2": "images/19_02.PNG",
+    "image3": "images/19_03.PNG"
   },
   {
     "name": "CHANEL",
     "price": 85,
     "description":"Эко кожа",
-    "image": "/images/01_04.PNG",
-    "image2": "/images/01_02.PNG",
-    "image3": "/images/01_05.PNG"
+    "image": "images/01_04.PNG",
+    "image2": "images/01_02.PNG",
+    "image3": "images/01_05.PNG"
   },
   {
     "name": "Premium",
     "price": 80,
     "description":"Соломенная плетеная сумка из ротанга",
-    "image": "/images/02_01.PNG",
-    "image2": "/images/02_02.PNG",
-    "image3": "/images/02_03.PNG"
+    "image": "images/02_01.PNG",
+    "image2": "images/02_02.PNG",
+    "image3": "images/02_03.PNG"
 
   },
   {
     "name": "CHANEL",
     "price": 75,
     "description":"",
-    "image": "/images/03_01.PNG",
-    "image2": "/images/03_03.PNG",
-    "image3": "/images/03_02.PNG"
+    "image": "images/03_01.PNG",
+    "image2": "images/03_03.PNG",
+    "image3": "images/03_02.PNG"
 
   },
   {
     "name": "Louis Vuitton",
     "price": 90,
     "description":"",
-    "image": "/images/04_01.PNG",
-    "image2": "/images/04_03.PNG",
-    "image3": "/images/04_02.PNG"
+    "image": "images/04_01.PNG",
+    "image2": "images/04_03.PNG",
+    "image3": "images/04_02.PNG"
 
   },
   {
     "name": "Louis Vuitton",
     "price": 95,
     "description":"",
-    "image": "/images/05_01.PNG",
-    "image2": "/images/05_02.PNG",
-    "image3": "/images/05_03.PNG"
+    "image": "images/05_01.PNG",
+    "image2": "images/05_02.PNG",
+    "image3": "images/05_03.PNG"
   },
   {
     "name": "Dolсе & Gabbana",
     "price": 90,
     "description":"",
-    "image": "/images/06_01.PNG",
-    "image2": "/images/06_02.PNG"
+    "image": "images/06_01.PNG",
+    "image2": "images/06_02.PNG"
   },
   {
     "name": "CHANEL",
     "price": 85,
     "description":"",
-    "image": "/images/07_01.PNG",
-    "image2": "/images/07_02.PNG",
-    "image3": "/images/07_03.PNG"
+    "image": "images/07_01.PNG",
+    "image2": "images/07_02.PNG",
+    "image3": "images/07_03.PNG"
   },
   {
     "name": "CHANEL",
     "price": 75,
     "description":"Эко кожа",
-    "image": "/images/08_01.PNG",
-    "image2": "/images/08_02.PNG"
+    "image": "images/08_01.PNG",
+    "image2": "images/08_02.PNG"
   },
   {
     "name": "CHANEL",
     "price": 75,
     "description":"Эко кожа",
-    "image": "/images/09.PNG"
+    "image": "images/09.PNG"
   }
 ]
 }
