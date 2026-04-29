@@ -36,6 +36,8 @@ fetch('./shop.json')
         return response.json();
     })
     .then(data => {
+    const products = data.items || data;
+
     const container = document.getElementById("shopContainer");
     container.innerHTML = "";
 
@@ -43,7 +45,9 @@ fetch('./shop.json')
         window.location.pathname.includes("index.html") ||
         window.location.pathname === "/";
 
-    const productsToShow = isHomePage ? data.slice(0, 10) : data;
+    const productsToShow = isHomePage
+        ? products.slice(0, 10)
+        : products;
 
     productsToShow.forEach((product, index) => {
             const shopLink = document.createElement('a');
