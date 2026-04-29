@@ -10,7 +10,7 @@ collections:
   - name: "shop"
     label: "Сумки"
     files:
-      - file: "shop.json"
+      - file: "./shop.json"
         label: "Товары"
         name: "items_file"
         fields:
