@@ -1,6 +1,33 @@
+# backend:
+#   name: git-gateway
+#   repo: dzmitrysopat/luxuryBags
+#   branch: main
+
+# media_folder: "images"
+# public_folder: "/images"
+
+# collections:
+#   - name: "shop"
+#     label: "Сумки"
+#     files:
+#       - file: "/shop.json"
+#         label: "Товары"
+#         name: "items_file"
+#         fields:
+#           - label: "Список товаров"
+#             name: "items"
+#             widget: "list"
+#             fields:
+#               - { label: "Название", name: "name", widget: "string", required: true}
+#               - { label: "Цена", name: "price", widget: "number", required: true }
+#               - { label: "Описание", name: "description", widget: "text", required: false }
+#               - { label: "Фото 1", name: "image", widget: "image", required: true }
+#               - { label: "Фото 2", name: "image2", widget: "image", required: false }
+#               - { label: "Фото 3", name: "image3", widget: "image", required: false }
+#               - { label: "Скрыть товар", name: "hidden", widget: "boolean", default: false }
+
 backend:
   name: git-gateway
-  repo: dzmitrysopat/luxuryBags
   branch: main
 
 media_folder: "images"
@@ -10,18 +37,19 @@ collections:
   - name: "shop"
     label: "Сумки"
     files:
-      - file: "/shop.json"
+      - file: "shop.json"
         label: "Товары"
-        name: "items_file"
+        name: "shop"
+        format: "json"
         fields:
-          - label: "Список товаров"
+          - label: "Сумки"
             name: "items"
             widget: "list"
+            summary: "{{fields.name}} - {{fields.price}} BYN"
             fields:
-              - { label: "Название", name: "name", widget: "string", required: true}
-              - { label: "Цена", name: "price", widget: "number", required: true }
+              - { label: "Название", name: "name", widget: "string" }
+              - { label: "Цена", name: "price", widget: "number" }
               - { label: "Описание", name: "description", widget: "text", required: false }
-              - { label: "Фото 1", name: "image", widget: "image", required: true }
+              - { label: "Фото 1", name: "image", widget: "image" }
               - { label: "Фото 2", name: "image2", widget: "image", required: false }
               - { label: "Фото 3", name: "image3", widget: "image", required: false }
-              - { label: "Скрыть товар", name: "hidden", widget: "boolean", default: false }
