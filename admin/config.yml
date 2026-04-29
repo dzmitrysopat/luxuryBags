@@ -18,9 +18,10 @@ collections:
             name: "items"
             widget: "list"
             fields:
-              - { label: "Название", name: "name", widget: "string" }
-              - { label: "Цена", name: "price", widget: "number" }
-              - { label: "Описание", name: "description", widget: "text" }
-              - { label: "Фото 1", name: "image", widget: "image" }
+              - { label: "Название", name: "name", widget: "string", required: true}
+              - { label: "Цена", name: "price", widget: "number", required: true }
+              - { label: "Описание", name: "description", widget: "text", required: false }
+              - { label: "Фото 1", name: "image", widget: "image", required: true }
               - { label: "Фото 2", name: "image2", widget: "image", required: false }
               - { label: "Фото 3", name: "image3", widget: "image", required: false }
+              - { label: "Скрыть товар", name: "hidden", widget: "boolean", default: false }
