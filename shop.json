@@ -1,4 +1,4 @@
-[
+{"items":[
   {
     "name": "Chloe",
     "price": 250,
@@ -151,3 +151,4 @@
     "image": "images/09.PNG"
   }
 ]
+}
