@@ -28,6 +28,7 @@
 
 backend:
   name: git-gateway
+  repo: dzmitrysopat/luxuryBags
   branch: main
 
 media_folder: "images"
