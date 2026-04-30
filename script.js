@@ -1,3 +1,11 @@
+const supabaseUrl = 'https://nktdrqvbkkxvvkblfvma.supabase.co/rest/v1/';
+const supabaseKey = 'sb_publishable_AUnx8LXgXIcD8APnzfsgvA_4ISp0JP2';
+
+const supabase = window.supabase.createClient(
+    supabaseUrl,
+    supabaseKey
+);
+
 let sections = document.querySelectorAll("section[id]");
 
 window.addEventListener("scroll", navHighlighter);
@@ -27,15 +35,21 @@ function navHighlighter() {
   });
 }
 
+async function loadProducts(){
+    const {data, error} = await supabase
+        .from('products')
+        .select('*')
+        .order('created_at', {ascending: false });
 
-fetch('./shop.json')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(`Ошибка загрузки JSON: ${response.status}`);
+        if (error){
+            console.error(error);
+            return;
         }
-        return response.json();
-    })
-    .then(data => {
+
+        renderProducts(data);
+}
+
+function renderProducts(products) {
     const products = data.items || data;
 
     const container = document.getElementById("shopContainer");
@@ -117,8 +131,104 @@ fetch('./shop.json')
     simulateTouch: true,
 });
         });
-    })
-    .catch(error => console.error('Ошибка:', error));
+}
+
+loadProducts();
+
+
+
+
+// fetch('./shop.json')
+//     .then(response => {
+//         if (!response.ok) {
+//             throw new Error(`Ошибка загрузки JSON: ${response.status}`);
+//         }
+//         return response.json();
+//     })
+//     .then(data => {
+//     const products = data.items || data;
+
+//     const container = document.getElementById("shopContainer");
+//     container.innerHTML = "";
+
+//     const isHomePage =
+//         window.location.pathname.includes("index.html") ||
+//         window.location.pathname === "/";
+
+//     const productsToShow = isHomePage
+//         ? products.slice(0, 10)
+//         : products;
+
+//     productsToShow.forEach((product, index) => {
+//             const shopLink = document.createElement('a');
+//             const card = document.createElement('article');
+//             card.classList.add('shop-item');
+//             shopLink.href = "./shop.html";
+
+//             // Собираем изображения из JSON
+//             const images = [
+//                 product.image,
+//                 product.image2,
+//                 product.image3
+//             ].filter(Boolean); // удаляет отсутствующие значения
+
+//             // Генерация слайдов
+//             let slidesHTML = images.map(img => `
+//                 <div class="swiper-slide">
+//                     <img src="${img}" alt="${product.name}" class="photo">
+//                 </div>
+//             `).join('');
+
+//             // Уникальные классы для каждого свайпера
+//             const swiperClass = `swiper-${index}`;
+//             const paginationClass = `swiper-pagination-${index}`;
+
+//             card.innerHTML = `
+//                 <div class="swiper ${swiperClass}">
+//                     <div class="swiper-wrapper">
+//                         ${slidesHTML}
+//                     </div>
+//                 </div>
+//                 <div class="pagination-container">
+//                     ${images.length > 1 ? `<div class="swiper-pagination ${paginationClass}"></div>` : ""}
+//                 </div>
+//                 <span class="name">${product.name}</span>
+//                 <span class="price">${product.price} бел.руб</span>
+//                 <span class="price description">${product.description}</span>
+//             `;
+
+//             shopLink.innerHTML = `Больше сумочек`
+
+//             container.appendChild(card);
+//             container.appendChild(shopLink);
+
+//             if (!isHomePage) {
+//                 shopLink.style.display = 'none'
+//             }
+
+//             // Инициализация Swiper только после добавления в DOM
+//             new Swiper(`.${swiperClass}`, {
+//     loop: images.length > 1,
+//     slidesPerView: 1,
+//     spaceBetween: 10,
+//     pagination: {
+//         el: `.${paginationClass}`,
+//         clickable: true
+//     },
+//     autoplay: images.length > 1 ? {
+//         delay: 3000,
+//         disableOnInteraction: false
+//     } : false,
+//     keyboard: {
+//         enabled: true,
+//         onlyInViewport: false
+//     },
+//     grabCursor: true,
+//     simulateTouch: true,
+// });
+//         });
+//     })
+//     .catch(error => console.error('Ошибка:', error));
 
 
 function updateDateTime() {
