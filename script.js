@@ -1,7 +1,7 @@
-const supabaseUrl = 'https://nktdrqvbkkxvvkblfvma.supabase.co/rest/v1/';
+const supabaseUrl = 'https://nktdrqvbkkxvvkblfvma.supabase.co';
 const supabaseKey = 'sb_publishable_AUnx8LXgXIcD8APnzfsgvA_4ISp0JP2';
 
-const supabase = window.supabase.createClient(
+const supabaseClient = window.supabase.createClient(
     supabaseUrl,
     supabaseKey
 );
@@ -36,7 +36,7 @@ function navHighlighter() {
 }
 
 async function loadProducts(){
-    const {data, error} = await supabase
+    const {data, error} = await supabaseClient
         .from('products')
         .select('*')
         .order('created_at', {ascending: false });
@@ -50,7 +50,7 @@ async function loadProducts(){
 }
 
 function renderProducts(products) {
-    const products = data.items || data;
+    // const products = data.items || data;
 
     const container = document.getElementById("shopContainer");
     container.innerHTML = "";
