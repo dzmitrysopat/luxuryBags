@@ -1,4 +1,4 @@
-const supabaseUrl = 'https://nktdrqvbkkxvvkblfvma.supabase.co/rest/v1/';
+const supabaseUrl = 'https://nktdrqvbkkxvvkblfvma.supabase.co';
 const supabaseKey = 'sb_publishable_AUnx8LXgXIcD8APnzfsgvA_4ISp0JP2';
 
 const supabaseClient = window.supabase.createClient(
