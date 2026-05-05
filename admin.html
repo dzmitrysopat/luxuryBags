@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <style>
+        body {
+            font-family: Arial;
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            margin: 5px 0;
+            padding: 8px;
+        }
+
+        button {
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        img {
+            max-width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Админка</h1>
+
+<h2>Добавить товар</h2>
+
+<input id="name" placeholder="Название">
+<input id="price" placeholder="Цена">
+<textarea id="description" placeholder="Описание"></textarea>
+<input type="file" id="image">
+
+<button onclick="addProduct()">Добавить</button>
+
+<h2>Товары</h2>
+<div id="list"></div>
+
+<script>
+const supabaseClient = window.supabase.createClient(
+    'https://nktdrqvbkkxvvkblfvma.supabase.co',
+    'sb_publishable_AUnx8LXgXIcD8APnzfsgvA_4ISp0JP2'
+);
+
+// Загрузка товаров
+async function loadProducts() {
+    const { data } = await supabaseClient
+        .from('products')
+        .select('*')
+        .order('id', { ascending: false });
+
+    const list = document.getElementById('list');
+    list.innerHTML = '';
+
+    data.forEach(product => {
+        list.innerHTML += `
+            <div class="product">
+                <img src="${product.image}">
+                <p><b>${product.name}</b></p>
+                <p>${product.price} руб</p>
+                <button onclick="deleteProduct(${product.id})">Удалить</button>
+            </div>
+        `;
+    });
+}
+
+// Добавление товара
+async function addProduct() {
+    const name = document.getElementById('name').value;
+    const price = document.getElementById('price').value;
+    const description = document.getElementById('description').value;
+    const file = document.getElementById('image').files[0];
+
+    if (!file) return alert('Выбери изображение');
+
+    const fileName = Date.now() + '-' + file.name;
+
+    // upload
+    const { error: uploadError } = await supabaseClient
+        .storage
+        .from('products')
+        .upload(fileName, file);
+
+    if (uploadError) {
+        console.error(uploadError);
+        return alert('Ошибка загрузки');
+    }
+
+    const { data: urlData } = supabaseClient
+        .storage
+        .from('products')
+        .getPublicUrl(fileName);
+
+    const imageUrl = urlData.publicUrl;
+
+    // запись в таблицу
+    await supabaseClient.from('products').insert({
+        name,
+        price,
+        description,
+        image: imageUrl
+    });
+
+    alert('Добавлено!');
+
+    loadProducts();
+}
+
+// Удаление
+async function deleteProduct(id) {
+    if (!confirm('Удалить товар?')) return;
+
+    await supabaseClient
+        .from('products')
+        .delete()
+        .eq('id', id);
+
+    loadProducts();
+}
+
+loadProducts();
+</script>
+
+</body>
+</html>
