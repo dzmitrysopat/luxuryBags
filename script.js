@@ -61,9 +61,6 @@ function renderProducts(products) {
         // window.location.pathname != "/shop.html"
         !window.location.pathname.includes("shop.html");
 
-        if (isHomePage){
-            products.slice(0, 10)
-}
 
     const productsToShow = isHomePage
         ? products.slice(0, 10)
