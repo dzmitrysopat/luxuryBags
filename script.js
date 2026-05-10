@@ -57,12 +57,10 @@ function renderProducts(products) {
     container.innerHTML = "";
 
     const isHomePage =
-        window.location.pathname.includes("index.html") ||
-        window.location.pathname === "/" ||
-        window.location.pathname === "";
-        // window.location.pathname != "/shop.html"
+        // window.location.pathname.includes("index.html") || window.location.pathname === "/" ||window.location.pathname === "";
+        window.location.pathname != "/shop.html"
 
-        if (window.location.pathname != "/shop.html"){
+        if (isHomePage){
             products.slice(0, 10)
 }
 
